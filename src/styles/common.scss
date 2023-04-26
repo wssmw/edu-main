@@ -1,0 +1,111 @@
+html.dark,
+html.light {
+  @apply transition-colors;
+}
+.c-text {
+  @apply text-dark-200
+  dark:text-gray-50;
+}
+.c-text-sub {
+  @apply text-dark-50
+  dark:text-gray-400;
+}
+.c-bg-base {
+  @apply bg-[#f6f8f9] dark:bg-[#141414];
+}
+.c-bg-light {
+  @apply bg-white
+  dark:bg-[#2a2a2a];
+}
+.c-border {
+  @apply border-1 border-gray-200
+  dark: border-gray-600;
+}
+.c-border-top {
+  @apply border-t-1 border-gray-200
+  dark: border-gray-600;
+}
+.c-border-bottom {
+  @apply border-b-1 border-gray-200
+  dark: border-gray-600;
+}
+.c-shadow {
+  @apply shadow-md shadow
+  dark:shadow-none dark:border-dark-100 dark:border-1;
+}
+
+.el-menu {
+  @apply border-none;
+}
+html.dark {
+  --w-e-textarea-bg-color: #333;
+  --w-e-textarea-color: #fff;
+  /* ...其他... */
+  .el-button--primary {
+    background-color: var(--el-color-primary-light-9);
+    color: var(--el-color-primary);
+    transition: all 0.2s;
+    border-color: var(--el-color-primary-light-3);
+    &:hover {
+      border-color: var(--el-color-primary);
+    }
+    &:active {
+      border-color: var(--el-color-primary);
+      background-color: var(--el-color-primary-light-7);
+    }
+  }
+  .el-button--danger {
+    background-color: var(--el-color-danger-light-9);
+    color: var(--el-color-danger);
+    transition: all 0.2s;
+    border-color: var(--el-color-danger-light-3);
+    &:hover {
+      border-color: var(--el-color-danger);
+    }
+    &:active {
+      border-color: var(--el-color-danger);
+      background-color: var(--el-color-danger-light-7);
+    }
+  }
+  .el-button--warning {
+    background-color: var(--el-color-warning-light-9);
+    color: var(--el-color-warning);
+    transition: all 0.2s;
+    border-color: var(--el-color-warning-light-3);
+    &:hover {
+      border-color: var(--el-color-warning);
+    }
+    &:active {
+      border-color: var(--el-color-warning);
+      background-color: var(--el-color-warning-light-7);
+    }
+  }
+  .el-button--success {
+    background-color: var(--el-color-success-light-9);
+    color: var(--el-color-success);
+    transition: all 0.2s;
+    border-color: var(--el-color-success-light-3);
+    &:hover {
+      border-color: var(--el-color-success);
+    }
+    &:active {
+      border-color: var(--el-color-success);
+      background-color: var(--el-color-success-light-7);
+    }
+  }
+  .el-table th.el-table__cell,
+  .el-table-fixed-column--right {
+    background: var(--el-bg-color-overlay) !important;
+  }
+}
+.el-button {
+  min-width: 88px;
+}
+.line-clamp-1 {
+  text-overflow: ellipsis; //溢出时用...
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text-primary{
+  color: var(--el-color-primary);
+}
